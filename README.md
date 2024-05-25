@@ -6,8 +6,7 @@ Part 1. Building a network server. Make a program that:
 
 1. Performs daemonization, further functionality concerns the daemon. 
 2. Describes the global descriptor of the log file. 
-3. Describes the struct sockaddr_in structure with parameters: socket format - PF_INET, address 
-- any, port - 3200 + 16. 
+3. Describes the struct sockaddr_in structure with parameters: socket format - PF_INET, address - any, port - 3200 + 16. 
 4. Forms a SOCK_STREAM socket of the PF_INET format. 
 5. Configures the socket to wait for requests using bind.
 6. Starts an endless cycle of processing requests from customers. 
@@ -21,8 +20,7 @@ to the client using send.
   
 Part 2. Building a network client. Make a program that: 
 
-1. Describes the struct sockaddr_in structure with parameters: socket format - PF_INET, address 
-- calculated by calling htonl(INADDR_LOOPBACK), port - 3200 + 16. 
+1. Describes the struct sockaddr_in structure with parameters: socket format - PF_INET, address - calculated by calling htonl(INADDR_LOOPBACK), port - 3200 + 16. 
 2. Forms a SOCK_STREAM socket of the PF_INET format. 
 3. Configures the socket to connect to the server using connect.
 4. In an endless loop, requests lines from the operator, transfers them to the server and prints them 
